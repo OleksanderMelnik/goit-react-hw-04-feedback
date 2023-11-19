@@ -40,7 +40,7 @@ const countPositiveFeedbackPercentage = () => {
         <Section title='Please leave feedback'>
         <FeedbackOptions
             onLeaveFeedback={onLeaveFeedback}
-            options = {['good', 'neutral', 'bad']}
+            options = {Object.keys({good, neutral, bad})}
           />
         </Section>
         <Section title='Statistics'>
